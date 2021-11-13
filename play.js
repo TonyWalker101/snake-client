@@ -11,7 +11,7 @@ const connect = () => {
   conn.setEncoding("utf8");
   
   return conn;
-}
+};
 
 console.log("Connecting ...");
 connect();
