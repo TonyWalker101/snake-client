@@ -7,7 +7,7 @@ const connect = () => {
     port: 50541,
   });
 
-  // Greets the player upon connecting to the server
+  // Actions to take upon connecting to the server
   conn.on("connect", () => {
     console.log("Successfully connected to game server");
     conn.write("Name: SNK");
