@@ -48,7 +48,7 @@ let message = setInterval(() => {
       connection.write("Say: WE THE BEST!")
     }, 5000);
   }
-  if (counter === 6) {
+  if (counter === 9) {
     clearInterval(message);
   }
 }, 10000);
