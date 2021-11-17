@@ -1,6 +1,7 @@
 // setup interface to handle user input from stdin
 
 let connection;
+let counter = 0;
 
 const setupInput = function(conn) {
 
@@ -15,6 +16,8 @@ const setupInput = function(conn) {
   
   return stdin;
 };
+
+// Function handles what happens when certain keys are pressed
 
 const handleUserInput = (key) => {
   if (key === "\u0003") {
@@ -34,11 +37,7 @@ const handleUserInput = (key) => {
   }
 };
 
-// setTimeout(() => {
-//   connection.write("Say: Call me the Pied Piper - lets do this")
-// }, 5000);
-
-let counter = 0;
+// Function sends some messages to the server for the player to see
 
 const message = setInterval(() => {
   connection.write("Say: ...another one");
