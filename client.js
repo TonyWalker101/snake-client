@@ -10,7 +10,7 @@ const connect = () => {
   // Actions to take upon connecting to the server
   conn.on("connect", () => {
     console.log("Successfully connected to game server");
-    conn.write("Name: SNK");
+    conn.write("Name: DJK");
   });
 
   // interpret incoming data as text
