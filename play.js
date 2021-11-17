@@ -1,7 +1,9 @@
 const { connect } = require("./client");
 const { setupInput } = require("./input");
 
+// lets player know they've connected to the server
 console.log("Connecting ...");
-let conn = connect();
 
+// lets the setupInput communicate with the server via the conn object
+let conn = connect();
 setupInput(conn);
