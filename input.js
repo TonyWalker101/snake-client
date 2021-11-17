@@ -17,21 +17,21 @@ const setupInput = function(conn) {
 };
 
 const handleUserInput = (key) => {
-    if (key === "\u0003") {
-      process.exit();
-    }
-    if (key === "w") {
-      connection.write("Move: up");
-    }
-    if (key === "a") {
-      connection.write("Move: left");
-    }
-    if (key === "s") {
-      connection.write("Move: down");
-    }
-    if (key === "d") {
-      connection.write("Move: right");
-    }
+  if (key === "\u0003") {
+    process.exit();
+  }
+  if (key === "w") {
+    connection.write("Move: up");
+  }
+  if (key === "a") {
+    connection.write("Move: left");
+  }
+  if (key === "s") {
+    connection.write("Move: down");
+  }
+  if (key === "d") {
+    connection.write("Move: right");
+  }
 };
 
 // setTimeout(() => {
@@ -40,12 +40,12 @@ const handleUserInput = (key) => {
 
 let counter = 0;
 
-let message = setInterval(() => {
+const message = setInterval(() => {
   connection.write("Say: ...another one");
-  counter += 1;
+  counter++;
   if (counter % 3 === 0) {
     setTimeout(() => {
-      connection.write("Say: WE THE BEST!")
+      connection.write("Say: WE THE BEST!");
     }, 5000);
   }
   if (counter === 9) {
