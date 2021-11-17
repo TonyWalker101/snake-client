@@ -34,6 +34,26 @@ const handleUserInput = (key) => {
     }
 };
 
+// setTimeout(() => {
+//   connection.write("Say: Call me the Pied Piper - lets do this")
+// }, 5000);
+
+let counter = 0;
+
+let message = setInterval(() => {
+  connection.write("Say: ...another one");
+  counter += 1;
+  if (counter % 3 === 0) {
+    setTimeout(() => {
+      connection.write("Say: WE THE BEST!")
+    }, 5000);
+  }
+  if (counter === 6) {
+    clearInterval(message);
+  }
+}, 10000);
+
+
 module.exports = {
   setupInput,
 };
