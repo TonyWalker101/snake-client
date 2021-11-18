@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["Snake Screenshot"](./images/snake_screenshot.png)
+!["Snake Screenshot"](<img src= "./images/snake_screenshot.png" width="200" height="200"/>)
 !["DJ Khaled gif"](https://media.giphy.com/media/l0HlQ7LRalQqdWfao/giphy.gif)
 
 ## Getting Started
