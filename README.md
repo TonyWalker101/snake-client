@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["Snake Screenshot"](/w5/snake-client/snake_screenshot.png)
+!["Snake Screenshot"](./images/snake_screenshot.png)
 
 ## Getting Started
 
